@@ -1,0 +1,29 @@
+{
+    "configurations": [
+    {
+        "name": "CUDA C++: Launch",
+        "type": "cuda-gdb",
+        "request": "launch",
+        "gdb": "cuda-gdb",
+        "program": "${command:cmake.launchTargetPath}",
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "${workspaceFolder}",
+        "externalConsole": true,
+        "MIMode": "gdb"
+    },
+
+    {
+        "name": "(gdb) Launch",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${command:cmake.launchTargetPath}",
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "${workspaceFolder}",
+        "externalConsole": true,
+        "MIMode": "gdb"
+    }
+    ]
+}
+   
