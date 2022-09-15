@@ -81,8 +81,6 @@ endif()
 if(    CMAKE_CUDA_COMPILER_VERSION VERSION_GREATER_EQUAL 10)
     # https://docs.nvidia.com/cuda/archive/10.1/cuda-compiler-driver-nvcc/index.html#virtual-architecture-feature-list
     set(arch_list
-        30 # Kepler
-        35 # Kepler w/ dynamic dispatch
         50 # Maxwell
         60 # Pascal
         70 # Volta
@@ -91,8 +89,6 @@ if(    CMAKE_CUDA_COMPILER_VERSION VERSION_GREATER_EQUAL 10)
 elseif(CMAKE_CUDA_COMPILER_VERSION VERSION_GREATER_EQUAL 9)
     # https://docs.nvidia.com/cuda/archive/9.2/cuda-compiler-driver-nvcc/index.html#virtual-architecture-feature-list
     set(arch_list
-        30 # Kepler
-        35 # Kepler w/ dynamic dispatch
         50 # Maxwell
         60 # Pascal
         70 # Volta
